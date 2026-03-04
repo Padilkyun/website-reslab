@@ -415,31 +415,149 @@ include __DIR__ . '/php-native/includes/navbar.php';
 </section>
 
 <!-- Location Section -->
-<section class="py-5" style="background: #0a0a0a;">
+<section class="py-5" style="background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);">
     <div class="container py-5">
-        <div class="glassmorphism-card position-relative overflow-hidden" style="min-height: 450px;" data-aos="fade-up">
-            <div class="position-absolute w-100 h-100" style="background: url('<?php echo BASE_URL; ?>/public/banner.jpg'); background-size: cover; background-position: center; opacity: 0.2;"></div>
-            <div class="row align-items-center g-5 position-relative" style="z-index: 10;">
-                <div class="col-lg-6">
-                    <i class="bi bi-geo-alt-fill display-1 text-warning mb-3"></i>
-                    <h2 class="display-4 fw-bold text-white mb-4">Lokasi ResLab</h2>
-                    <p class="lead text-white-50 mb-4">ResLab terletak di 3FM6+VFC, Limau Manis, Kec. Pauh, Kota Padang, Sumatera Barat 25175.</p>
-                    <p class="text-white-50 mb-4">Fasilitas ini mendukung penelitian robotika dan sistem tertanam dengan peralatan modern dan lengkap.</p>
-                    <a href="https://maps.google.com/?q=3FM6+VFC,+Limau+Manis,+Pauh,+Padang" target="_blank" class="btn btn-primary btn-lg">
-                        <i class="bi bi-map me-2"></i> View on Google Maps
+        <!-- Header -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4" style="width: 80px; height: 80px; background: linear-gradient(135deg, #f97316, #fb923c); box-shadow: 0 8px 32px rgba(249, 115, 22, 0.3);">
+                <i class="bi bi-geo-alt-fill text-white" style="font-size: 2.5rem;"></i>
+            </div>
+            <h2 class="display-4 fw-bold text-white mb-3">Lokasi ResLab</h2>
+            <p class="lead text-white-50">Laboratorium Robotika dan Sistem Tertanam - Universitas Andalas</p>
+        </div>
+
+        <!-- Main Card -->
+        <div class="row g-4 mb-5">
+            <!-- Info Section -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 2.5rem; height: 100%;">
+                    <h5 class="text-white fw-bold mb-4">
+                        <i class="bi bi-info-circle me-2" style="color: #fb923c;"></i> Informasi Lokasi
+                    </h5>
+                    
+                    <div class="d-flex flex-column gap-4">
+                        <!-- Gedung Info -->
+                        <div class="d-flex gap-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3" style="min-width: 60px; width: 60px; height: 60px; background: rgba(249, 115, 22, 0.2); border: 2px solid rgba(249, 115, 22, 0.4);">
+                                <i class="bi bi-building text-warning" style="font-size: 1.8rem;"></i>
+                            </div>
+                            <div>
+                                <p class="text-white-50 small fw-500 mb-1">GEDUNG</p>
+                                <h6 class="text-white fw-bold mb-0">Fakultas Teknik</h6>
+                                <p class="text-white-50 small mb-0">Lantai 3, Ruang Lab Elektronika</p>
+                            </div>
+                        </div>
+
+                        <!-- Alamat Info -->
+                        <div class="d-flex gap-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3" style="min-width: 60px; width: 60px; height: 60px; background: rgba(59, 130, 246, 0.2); border: 2px solid rgba(59, 130, 246, 0.4);">
+                                <i class="bi bi-geo-alt text-info" style="font-size: 1.8rem;"></i>
+                            </div>
+                            <div>
+                                <p class="text-white-50 small fw-500 mb-1">ALAMAT</p>
+                                <h6 class="text-white fw-bold mb-0">3FM6+VFC, Limau Manis</h6>
+                                <p class="text-white-50 small mb-0">Pauh, Padang 25163</p>
+                            </div>
+                        </div>
+
+                        <!-- Kota Info -->
+                        <div class="d-flex gap-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-3" style="min-width: 60px; width: 60px; height: 60px; background: rgba(34, 197, 94, 0.2); border: 2px solid rgba(34, 197, 94, 0.4);">
+                                <i class="bi bi-map text-success" style="font-size: 1.8rem;"></i>
+                            </div>
+                            <div>
+                                <p class="text-white-50 small fw-500 mb-1">KOTA</p>
+                                <h6 class="text-white fw-bold mb-0">Padang, Sumatera Barat</h6>
+                                <p class="text-white-50 small mb-0">Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="border-color: rgba(255, 255, 255, 0.1); margin: 2rem 0;">
+
+                    <a href="https://maps.google.com/?q=3FM6+VFC,+Limau+Manis,+Pauh,+Padang" target="_blank" class="btn btn-primary btn-lg w-100" style="background: linear-gradient(135deg, #f97316, #fb923c); border: none; padding: 0.75rem;">
+                        <i class="bi bi-map me-2"></i> Buka di Google Maps
                     </a>
                 </div>
-                <div class="col-lg-6">
-                    <div class="glassmorphism p-5 rounded-4 text-center">
-                        <i class="bi bi-box display-1 text-warning mb-4"></i>
-                        <h4 class="text-white mb-3">3D Model Viewer</h4>
-                        <p class="text-white-50 small">Interactive 3D model of our laboratory</p>
+            </div>
+
+            <!-- Features Section -->
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="row g-3 h-100">
+                    <!-- Robotics Lab -->
+                    <div class="col-sm-6">
+                        <div style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(251, 146, 60, 0.1) 100%); border: 2px solid rgba(249, 115, 22, 0.3); border-radius: 20px; padding: 2rem; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; transition: all 0.3s ease;" class="feature-card">
+                            <i class="bi bi-robot text-warning mb-3" style="font-size: 3rem;"></i>
+                            <h6 class="text-white fw-bold mb-2">Robotics Lab</h6>
+                            <p class="text-white-50 small mb-0">Robot dan Otomasi Industri</p>
+                        </div>
                     </div>
+
+                    <!-- Embedded Systems -->
+                    <div class="col-sm-6">
+                        <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(96, 165, 250, 0.1) 100%); border: 2px solid rgba(59, 130, 246, 0.3); border-radius: 20px; padding: 2rem; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; transition: all 0.3s ease;" class="feature-card">
+                            <i class="bi bi-cpu text-info mb-3" style="font-size: 3rem;"></i>
+                            <h6 class="text-white fw-bold mb-2">Embedded Systems</h6>
+                            <p class="text-white-50 small mb-0">Mikrokontroller & IoT</p>
+                        </div>
+                    </div>
+
+                    <!-- Electronic Lab -->
+                    <div class="col-sm-6">
+                        <div style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(74, 222, 128, 0.1) 100%); border: 2px solid rgba(34, 197, 94, 0.3); border-radius: 20px; padding: 2rem; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; transition: all 0.3s ease;" class="feature-card">
+                            <i class="bi bi-lightning-charge text-success mb-3" style="font-size: 3rem;"></i>
+                            <h6 class="text-white fw-bold mb-2">Electronic Lab</h6>
+                            <p class="text-white-50 small mb-0">Rangkaian Listrik</p>
+                        </div>
+                    </div>
+
+                    <!-- Research Area -->
+                    <div class="col-sm-6">
+                        <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(196, 181, 253, 0.1) 100%); border: 2px solid rgba(168, 85, 247, 0.3); border-radius: 20px; padding: 2rem; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; transition: all 0.3s ease;" class="feature-card">
+                            <i class="bi bi-flask text-light mb-3" style="font-size: 3rem;"></i>
+                            <h6 class="text-white fw-bold mb-2">Research Area</h6>
+                            <p class="text-white-50 small mb-0">Inovasi & Pengembangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+                    <i class="bi bi-telephone text-warning mb-2" style="font-size: 2rem;"></i>
+                    <h6 class="text-white fw-bold mb-2">Telepon</h6>
+                    <p class="text-white-50 small mb-0">+62 751 72907</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+                    <i class="bi bi-clock text-info mb-2" style="font-size: 2rem;"></i>
+                    <h6 class="text-white fw-bold mb-2">Jam Operasional</h6>
+                    <p class="text-white-50 small mb-0">08:00 - 17:00 WIB</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+                    <i class="bi bi-envelope text-success mb-2" style="font-size: 2rem;"></i>
+                    <h6 class="text-white fw-bold mb-2">Email</h6>
+                    <p class="text-white-50 small mb-0">reslab@unand.ac.id</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(249, 115, 22, 0.6);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.25) 0%, rgba(251, 146, 60, 0.15) 100%) !important;
+    box-shadow: 0 16px 40px rgba(249, 115, 22, 0.2);
+}
+</style>
 
 <!-- AOS Animation Library -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
